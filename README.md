@@ -3,6 +3,7 @@ BigData
 The Massive Data Analysis class git.
 
 The link for Exercises results:
+
 Exercise1 Fixed Length Word Count: 
 http://s3.amazonaws.com/xinbigdata/output/Exercise1/part-r-00000
 
