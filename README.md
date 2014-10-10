@@ -10,5 +10,5 @@ http://s3.amazonaws.com/xinbigdata/output/Exercise1/part-r-00000
 Exercise2 Initical Count: 
 http://s3.amazonaws.com/xinbigdata/output/Exercise2/part-r-00000
 
-Exercise1 Top-K Word Count: 
+Exercise3 Top-K Word Count: 
 http://s3.amazonaws.com/xinbigdata/output/Exercise3/part-r-00000
