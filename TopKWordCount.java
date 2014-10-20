@@ -56,28 +56,28 @@ public class TopKWordCount {
 
     		
         
- public static void main(String[] args) throws Exception {
-    Configuration conf = new Configuration();
-        
-        Job job = new Job(conf, "Top-K Word Count");
-    
-    job.setOutputKeyClass(Text.class);
-    job.setOutputValueClass(IntWritable.class);
-        
-    job.setMapperClass(Map.class);
-    job.setReducerClass(Reduce.class);
-        
-    job.setInputFormatClass(TextInputFormat.class);
-    job.setOutputFormatClass(TextOutputFormat.class);
-
-    job.setNumReduceTasks(1);
-    job.setJarByClass(TopKWordCount.class);
-        
-    FileInputFormat.addInputPath(job, new Path(args[0]));
-    FileOutputFormat.setOutputPath(job, new Path(args[1]));
-        
-    job.waitForCompletion(true);
- }
+	public static void main(String[] args) throws Exception {
+		Configuration conf = new Configuration();
+	        
+		Job job = new Job(conf, "Top-K Word Count");
+	    
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(IntWritable.class);
+	        
+		job.setMapperClass(Map.class);
+		job.setReducerClass(Reduce.class);
+	        
+		job.setInputFormatClass(TextInputFormat.class);
+		job.setOutputFormatClass(TextOutputFormat.class);
+	
+		job.setNumReduceTasks(1);
+		job.setJarByClass(TopKWordCount.class);
+	        
+		FileInputFormat.addInputPath(job, new Path(args[0]));
+		FileOutputFormat.setOutputPath(job, new Path(args[1]));
+	        
+		job.waitForCompletion(true);
+	}
 /**
 *ControlledJob
 *https://hadoop.apache.org/docs/r1.0.4/api/org/apache/hadoop/mapreduce/lib/jobcontrol/ControlledJob.html
